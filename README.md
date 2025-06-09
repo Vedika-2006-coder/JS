@@ -1,2 +1,2 @@
 # JS
-JavaScript-Code-Or-Chai
+JavaScript
