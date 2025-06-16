@@ -14,3 +14,7 @@
 // Array->ordered list of values
 // Function
 // Date ,RegExp-> Special built-in object types
+
+console.log(typeof null) // object
+console.log(typeof undefined) // undefined
+
