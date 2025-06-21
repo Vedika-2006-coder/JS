@@ -14,11 +14,11 @@ console.log(n) //NaN
 console.log(1+"2")
 console.log("1"+2)
 console.log("1"+"2")
-console.log(1+1+"2")
+console.log(1+1+"2") // 22
 console.log("1"+1+"2")
 console.log("1"+1+2)
 
 a=3
 b=3
-console.log(++a)
-console.log(b++)
+console.log(++a) // 4
+console.log(b++) // 3
