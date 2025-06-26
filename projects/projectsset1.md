@@ -10,7 +10,7 @@ buttons.forEach( function (button)
   button.addEventListener('click',function(e)
   {
     color=e.target.id
-    switch(color)
+    switch(color))
     {
       case 'grey':body.style.backgroundColor="grey"
       break;
