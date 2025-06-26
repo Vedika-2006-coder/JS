@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai aur code</title>
+</head>                     
+<body style="background-color: black; color: white;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesdayy</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+    </div>
+
+    <!-- ✅ JavaScript at the end of body -->
+    <script>
+        const p = document.querySelector('.parent');
+        console.log("Parent element:", p);
+        console.log("Children:", p.children); // Returns: only element nodes .
+        // Ignores: text nodes, comment nodes, and other non-element nodes.
+        // Type: HTMLCollection
+        console.log("Last child text:", p.children[4].innerHTML); // Should log "Friday"
+        for(let i=0;i<p.children.length;i++)
+    {
+        p.children[i].style.color="red"
+    }
+    console.log(p.firstElementChild)
+    console.log(p.lastElementChild)
+    const  dayOne=document.querySelector('.day')
+    console.log(dayOne)
+    console.log(dayOne.parentElement)
+    console.log(dayOne.nextElementSibling)
+    console.log(p.childNodes)  //  Returns: all types of child nodes, including:Elements,Text nodes (like spaces, newlines),Comment nodes.
+    // Type: NodeList
+    </script>
+</body>
+</html>
